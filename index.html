@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Umer Imtiaz Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8d6f3c9008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo">Umer</h1>
+        <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+         <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-times" onclick="closeMenu()"></i>
+
+        </ul>
+       <i class="fas fa-bars" onclick="openMenu()"></i>
+
+      </nav>
+      <!-- <div class="header-container">
+       
+       <p>Web Developer</p>
+        <h1>Hi, i am <span>Mh. Umer Imtiaz</span><br> From Pakistan</h1>
+      
+      </div> -->
+      <div class="row-1">
+          
+       <div class="column-1">
+        <p>Web Developer</p>
+        <h1>Hi, i am <span>Mh. Umer Imtiaz</span><br> From Pakistan</h1>
+       </div>
+     <!-- <div class="column-2">
+             <img src="images/My_professional_photo-removebg-preview.png" alt="">
+       </div> -->
+
+      
+      </div>
+     
+    </div>
+
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+         <img src="images/My_professional_photo-removebg-preview(1).png">
+        </div>
+        <div class="col-2">
+           <h1 class="subtitle"> About Me</h1>
+           <p>Full Stack Developer with experience in designing scalable web applications. Skilled in Oracle apex, PHP, and    Laravel with focus on performance, security, and real-time data management to deliver smooth user experiences.</p>
+           <div class="tab-title">
+              <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-content" id="skills">
+            <ul>
+              <li><span>Languages: </span><br>JavaScript, PHP, SQL</li>
+              <li><span>Technologies: </span><br>Oracle Apex, Laravel, Git, MongoDB, HTML/CSS, Bootstrap, TailwindCSS, MySQL</li>
+              
+            </ul>
+           </div>
+           <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>May 2022 – Jun 2023</span><br>Web Developer At XOHOA</li>
+              <li><span>Oct 2025 – Jan 2026 </span><br>Oracle Apex Developer At Fatima Group</li>
+              
+            </ul>
+           </div>
+            <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2019 - 2021</span><br>MCS (Computer Science) From Bahauddin Zakariya University</li>
+              <li><span>2016 - 2018 </span><br>BSC (Computer Science) From Bahauddin Zakariya University</li>
+              
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="service">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+         <i class="fa-solid fa-code"></i>
+        <h2>Laravel</h2>
+        <p>I specialize in building dynamic web applications using the Laravel framework combined with modern HTML, CSS, and JavaScript.
+
+Throughout my career, I have collaborated effectively within agile teams of three to deliver complex business solutions.</p>
+        <a href="#">Learn More</a>
+        </div>
+        
+     
+      <div>
+        <i class="fa-solid fa-server"></i>
+        <h2>Oracle Apex</h2>
+        <p>I am a certified Oracle APEX Cloud Developer with a proven track record of building enterprise-grade database applications from scratch. My expertise lies in transforming complex business requirements into fully functional, web-based applications.</p>
+          <a href="#">Learn More</a>
+      </div>
+        
+      <!-- <div>
+        <h2>Oracle Apex</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis voluptas quos quisquam mollitia voluptatum tempora officia tenetur deserunt voluptates, saepe ratione porro a, nihil, cumque consequatur reiciendis! Obcaecati, quae!</p>
+          <a href="#">Learn More</a>
+      </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- ------portfolio  -->
+  
+  <div id="portfolio">
+    <div class="container">
+         <h1 class="subtitle">My Work</h1>
+         <div class="work-list">
+          <div class="work">
+            <img src="images/Asset_Management_System.png" alt="">
+            <div class="info">
+              <h3>Asset Management System</h3>
+              <p>Created an asset management system that allow admin to generate assets, allocate them to employees of the company and then return them through employee return request.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Inventory Management System.png" alt="">
+             <div class="info">
+               <h3>Inventory Management System</h3>
+              <p>Developed an inventory Management System that allows stores to purchase and sale products and keep track of their inventory.</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+             <img src="images/school.png" alt="">
+             <div class="info">
+                <h3>School Management System</h3>
+              <p>Architected a role-based management system for schools using Laravel; implemented database relationships for tracking student performance and attendance.</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+         </div>
+         <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+<div id="contact">
+  <div class="container">
+  <div class="row">
+    <div class="left-contact-col">
+      <h1 class="subtitle">Contact info</h1>
+      <p><i class="fa-solid fa-envelope"></i>umerimtiaz975@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone-flip"></i>03226433677</p>
+      <div class="social-icon">
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="images/Muhammad Umer Imtiaz's CV.pdf" download class="btn btn2">Download CV</a>
+    </div>
+    <div class="right-contact-col">
+        <form  action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a901a181-e07c-428a-998a-f052d4036e4f">
+          <input type="text" name="Name" placeholder="Enter Name" required>
+          <input type="email" name="Email" placeholder="Enter Email" required>
+          <textarea name="Message" rows="6" placeholder="Enter Message"></textarea>
+          <button class="btn2 submit">Submit</button>
+        </form>
+    </div>
+  </div>
+  </div> 
+  <div class="copyright">
+    <p>Copyright @ Muhammad Umer Imtiaz</p>
+  </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function openTab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove('active-link')
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove('active-content')
+      }
+      event.currentTarget.classList.add('active-link');
+      document.getElementById(tabname).classList.add('active-content')
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById('sidemenu');
+    function openMenu(){
+     
+      sidemenu.style.right = "0"
+    }
+    function closeMenu(){
+sidemenu.style.right = "-200px"
+    }
+  </script>
+</body>
+</html>
