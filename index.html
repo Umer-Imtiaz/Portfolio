@@ -32,10 +32,29 @@
       </div> -->
       <div class="row-1">
           
-       <div class="column-1">
-        <p>Web Developer</p>
-        <h1>Hi, i am <span>Mh. Umer Imtiaz</span><br> From Pakistan</h1>
-       </div>
+       <!-- <div class="column-1" id="heading-1">
+        <p id="heading-2"></p>
+        <h1 id="heading-3"><span id="span-1"></span><br></h1>
+       </div> -->
+       <!-- <div class="column-1" id="heading-1">
+         <p id="heading-2"></p>
+         <h1 id="heading-3">
+          <span id="span-1"></span>
+          <span id="span-2"></span><br>
+          <span id="span-3"></span>
+         </h1>
+       </div> -->
+
+       <div class="column-1 reveal" id="hero">
+  <p id="heading-2" class="role"></p>
+
+  <h1 class="hero-title">
+    <span id="span-1"></span>
+    <span id="span-2" class="highlight"></span><br>
+    <span id="span-3"></span>
+    <span class="cursor">|</span>
+  </h1>
+</div>
      <!-- <div class="column-2">
              <img src="images/My_professional_photo-removebg-preview.png" alt="">
        </div> -->
@@ -49,18 +68,18 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-1">
+        <div class="col-1 reveal">
          <img src="images/My_professional_photo-removebg-preview(1).png">
         </div>
-        <div class="col-2">
-           <h1 class="subtitle"> About Me</h1>
-           <p>Full Stack Developer with experience in designing scalable web applications. Skilled in Oracle apex, PHP, and    Laravel with focus on performance, security, and real-time data management to deliver smooth user experiences.</p>
+        <div class="col-2 reveal">
+           <h1 class="subtitle reveal"> About Me</h1>
+           <p class="reveal">Full Stack Developer with experience in designing scalable web applications. Skilled in Oracle apex, PHP, and    Laravel with focus on performance, security, and real-time data management to deliver smooth user experiences.</p>
            <div class="tab-title">
-              <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-              <p class="tab-links" onclick="openTab('experience')">Experience</p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links active-link reveal" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links reveal" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links reveal" onclick="openTab('education')">Education</p>
            </div>
-           <div class="tab-contents active-content" id="skills">
+           <div class="tab-contents active-content reveal" id="skills">
             <ul>
               <li><span>Languages: </span><br>JavaScript, PHP, SQL</li>
               <li><span>Technologies: </span><br>Oracle Apex, Laravel, Git, MongoDB, HTML/CSS, Bootstrap, TailwindCSS, MySQL</li>
@@ -87,8 +106,8 @@
   </div>
   <div id="service">
     <div class="container">
-      <h1 class="subtitle">My Services</h1>
-      <div class="services-list">
+      <h1 class="subtitle reveal">My Services</h1>
+      <div class="services-list reveal">
         <div>
          <i class="fa-solid fa-code"></i>
         <h2>Laravel</h2>
@@ -116,11 +135,11 @@ Throughout my career, I have collaborated effectively within agile teams of thre
   </div>
   <!-- ------portfolio  -->
   
-  <div id="portfolio">
+  <div id="portfolio reveal">
     <div class="container">
-         <h1 class="subtitle">My Work</h1>
+         <h1 class="subtitle reveal">My Work</h1>
          <div class="work-list">
-          <div class="work">
+          <div class="work reveal">
             <img src="images/Asset_Management_System.png" alt="">
             <div class="info">
               <h3>Asset Management System</h3>
@@ -128,7 +147,7 @@ Throughout my career, I have collaborated effectively within agile teams of thre
               <a href=""><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work reveal">
             <img src="images/Inventory Management System.png" alt="">
              <div class="info">
                <h3>Inventory Management System</h3>
@@ -136,7 +155,7 @@ Throughout my career, I have collaborated effectively within agile teams of thre
                 <a href=""><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work reveal">
              <img src="images/school.png" alt="">
              <div class="info">
                 <h3>School Management System</h3>
@@ -151,7 +170,7 @@ Throughout my career, I have collaborated effectively within agile teams of thre
 <div id="contact">
   <div class="container">
   <div class="row">
-    <div class="left-contact-col">
+    <div class="left-contact-col reveal">
       <h1 class="subtitle">Contact info</h1>
       <p><i class="fa-solid fa-envelope"></i>umerimtiaz975@gmail.com</p>
       <p><i class="fa-solid fa-square-phone-flip"></i>03226433677</p>
@@ -161,7 +180,7 @@ Throughout my career, I have collaborated effectively within agile teams of thre
       </div>
       <a href="images/Muhammad Umer Imtiaz CV.pdf" download class="btn btn2">Download CV</a>
     </div>
-    <div class="right-contact-col">
+    <div class="right-contact-col reveal">
         <form  action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="a901a181-e07c-428a-998a-f052d4036e4f">
           <input type="text" name="Name" placeholder="Enter Name" required>
@@ -200,6 +219,116 @@ Throughout my career, I have collaborated effectively within agile teams of thre
     function closeMenu(){
 sidemenu.style.right = "-200px"
     }
+
   </script>
+  <!-- <script>
+window.addEventListener("scroll", function() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(function(el) {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script> -->
+
+<!-- <script>
+const role = "Web Developer";
+const line1 = "Hi, I am ";
+const span1 = 'Mh. Umer Imtiaz'
+const line2 = "From Pakistan";
+
+let i = 0, j = 0, k = 0 , l=0;
+
+function typeEffect() {
+
+  // Typing role
+  if (i < role.length) {
+    document.getElementById("heading-2").innerHTML += role.charAt(i);
+    i++;
+    setTimeout(typeEffect, 50);
+  }
+
+  // Typing first line
+  else if (j < line1.length) {
+    document.getElementById("span-1").innerHTML += line1.charAt(j);
+    j++;
+    setTimeout(typeEffect, 50);
+  }
+    else if (l < span1.length) {
+    document.getElementById("span-2").innerHTML += span1.charAt(l);
+    l++;
+    setTimeout(typeEffect, 50);
+  }
+  // Typing second line
+  else if (k < line2.length) {
+    document.getElementById("span-3").innerHTML += line2.charAt(k);
+    k++;
+    setTimeout(typeEffect, 50);
+  }
+}
+
+typeEffect();
+</script> -->
+<script>
+let started = false;
+
+window.addEventListener("scroll", () => {
+  const hero = document.getElementById("hero");
+  const position = hero.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (position < screenHeight - 100 && !started) {
+    started = true;
+    startTyping();
+  }
+
+  // reveal animations
+  document.querySelectorAll(".reveal").forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < screenHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+<script>
+const role = "WEB DEVELOPER";
+const line1 = "Hi, I am ";
+const name = "Mh. Umer Imtiaz";
+const line2 = "From Pakistan";
+
+const speed = 35;
+
+function typeText(el, text, callback) {
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      el.innerHTML += text[i];
+      i++;
+      setTimeout(type, speed);
+    } else if (callback) {
+      setTimeout(callback, 300);
+    }
+  }
+
+  type();
+}
+
+function startTyping() {
+  typeText(document.getElementById("heading-2"), role, () => {
+    typeText(document.getElementById("span-1"), line1, () => {
+      typeText(document.getElementById("span-2"), name, () => {
+        typeText(document.getElementById("span-3"), line2);
+      });
+    });
+  });
+}
+</script>
 </body>
 </html>
