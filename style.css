@@ -345,7 +345,7 @@ nav ul li a:hover::after{
   display: inline-block;
 }
 .btn2:hover{
-  transform: scaleY(-10px);
+  transform: scale(1.05); /* FIXED */
 }
 
 .right-contact-col form{
